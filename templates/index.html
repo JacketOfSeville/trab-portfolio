@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Currículo</title>
+
+    <style>
+        .header{
+            text-align: center;
+        }
+        h1, p, table, th, tr, main {
+          font-family: 'Roboto', sans-serif;
+        }
+        table, tr, td {
+          border-bottom: 1px solid black;
+          padding: 5px;
+          text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .row:hover {
+            background-color: #dfdfdf;
+        }
+        td:hover {
+            background-color: #dfdfdf;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #counter {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            text-align: center;
+            background-color: #efefef;
+            width: 100%;
+            padding: 5px;
+            font-size: 1.2em;
+        }
+        main {
+            margin-top: 20px;
+        }
+        .main {
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div id="counter">
+        <p><strong>Acessos:</strong> {{ contador }}</p>
+    </div>
+    
+
+    <main>
+        <h1 class="header">Vinícius da Cruz Krummenauer</h1>
+
+        <table>
+            <tr class="row">
+                <td colspan="3">Rua Arnoldo Osvaldo Mentz, 743</td>
+            </tr>
+            <tr class="row">
+                <td>Vila Nova</td>
+                <td>Igrejinha</td>
+                <td>Rio Grande do Sul</td>
+            </tr>
+            <tr class="row">
+                <td colspan="2"><a href="mailto:viniciuskrummenauer9@gmail.com">viniciuskrummenauer9@gmail.com</a></td>
+                <td colspan="1"><a href="https://wa.me/5551999085286">(51) 99908-5286</a></td>
+            </tr>
+            <tr class="row">
+                <td>20 anos</td>
+                <td>Solteiro</td>
+                <td>Brasileiro</td>
+            </tr>
+        </table> 
+
+        <h2 class="header">FORMAÇÃO ACADÊMICA</h2>
+        <table class="main">
+            <tr class="row">
+                <td style="text-align: left">Sistemas da Informação</td>
+                <td>Bacharelado</td>
+                <td>FACCAT</td>
+                <td>Cursando</td>
+                <td style="text-align: right">2021 — Agora</td>
+            </tr>
+            <tr class="row">
+                <td style="text-align: left">Ensino Médio</td>
+                <td>Ensino Médio</td>
+                <td>E.E.E.M. Berthalina Kirsch</td>
+                <td>Completo</td>
+                <td style="text-align: right">2018 — 2020</td>
+            </tr>
+        </table>
+
+        <h2 class="header">EXPERIÊNCIA</h2>
+        <table class="main">
+            <tr class="row">
+                <td style="text-align: left">Desenvolvedor Geral</td>
+                <td>ITEC Engenharia</td>
+                <td>Igrejinha/RS</td>
+                <td style="text-align: right">Jun/2023 — Agora</td>
+            </tr>
+            <tr class="row">
+                <td style="text-align: left">Assistente Administativo e Marketing</td>
+                <td>800K</td>
+                <td>Taquara/RS</td>
+                <td style="text-align: right">Mar/2021 — Agr/2023</td>
+            </tr>
+        </table>
+
+        <h2 class="header">IDIOMAS</h2>
+        <table class="main">
+            <tr class="row">
+                <td style="text-align: left">Português (Brasileiro)</td>
+                <td>Nativo</td>
+                <td>Fala, Entende e Escreve</td>
+                <td style="text-align: right">Lingua mãe</td>
+            </tr>
+            <tr class="row">
+                <td style="text-align: left">Inglês (Britânico)</td>
+                <td>Fluente</td>
+                <td>Fala, Entende e Escreve</td>
+                <td style="text-align: right">14 Anos (2009)</td>
+            </tr>
+            <tr class="row">
+                <td style="text-align: left">Espanhol (Espanha)</td>
+                <td>Avançado</td>
+                <td>Fala, Entende e Escreve</td>
+                <td style="text-align: right">6 Anos (2017)</td>
+            </tr>
+            <tr class="row">
+                <td style="text-align: left">Alemão</td>
+                <td>Iniciante</td>
+                <td>Fala, Entende e Escreve</td>
+                <td style="text-align: right">3 Anos (2020)</td>
+            </tr>
+            <tr class="row">
+                <td style="text-align: left">Italiano</td>
+                <td>Iniciante</td>
+                <td>Entende</td>
+                <td style="text-align: right">1 Ano (2022)</td>
+            </tr>
+        </table>
+
+        <h2 class="header">CONHECIMENTOS</h2>
+        <table class="main">
+            <tr>
+                <td>Google Workspace</td>
+                <td>Google Docs</td>
+                <td>Google Planilhas</td>
+                <td>Google Console</td>
+            </tr>
+            <tr>
+                <td>Firebase</td>
+                <td>Firestorm</td>
+                <td>Amazon Web Services</td>
+                <td>Microsoft Azure</td>
+            </tr>
+            <tr>
+                <td>Microsoft Windows</td>
+                <td>Ubuntu</td>
+                <td>Arch Linux</td>
+                <td>Linux Mint</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>C++</td>
+                <td>JavaScript</td>
+                <td>Python</td>
+            </tr>
+            <tr>
+                <td>MySQL</td>
+                <td>REST API</td>
+                <td>Lua</td>
+                <td>Dart - Flutter</td>
+            </tr>
+        </table>
+        
+    </main>
+    
+</body>
+</html>
